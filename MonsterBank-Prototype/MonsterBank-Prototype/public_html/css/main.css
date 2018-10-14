@@ -4,6 +4,7 @@
    Author's custom styles
    ========================================================================== */
 
+
 body {
 	background: rgb(33,33,33);
 	color: orange;
@@ -22,7 +23,54 @@ header .nav {
 }
 
 .welcome-img {
-	position:absolute;
+	position:relative;
+	left: 0px;
+	top: 0px;
+	background: black;
+	text-align:center;
+	z-index: -1;
+	width: 100%;
+}
+
+.welcome-img img {
+	width: 100%;
+}
+
+header .nav-item {
+	margin: 5px;
+	padding-top:10px;
+}
+
+header .nav-item {
+	margin: 5px;
+	padding-top:10px;
+}
+header .nav-item a {
+	font-weight: bold;
+}
+
+.empty-gradient {
+	height: 100px;
+	background: linear-gradient(black, rgb(33,33,33));
+}
+
+.upcontent {
+	position: absolute;
+	width: 100%;
+}
+
+.fas, .fab {
+	color: orange;
+}
+
+.card {
+	background: rgba(255,255,255,0.1);
+	text-align: center;
+}
+
+.card .fas, 
+.card .fab {
+	font-size:7.5em;
 }
 
 
