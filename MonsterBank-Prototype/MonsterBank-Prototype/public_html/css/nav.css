@@ -1,0 +1,27 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+	background: rgb(33,33,33);
+	color: orange;
+}
+
+header .nav {
+	float: right;
+}
+
+.nav-item a {
+	color: orange;
+}
+
+nav .nav-item:hover a {
+	color: red;
+}
+
+
+
+
