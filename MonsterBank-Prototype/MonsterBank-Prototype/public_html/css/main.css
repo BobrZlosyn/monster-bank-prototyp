@@ -19,9 +19,10 @@ header .nav {
 }
 
 .welcome-img h1 {
-	position: absolute;
-	top: 250px;
-	left: 250px;
+	position: relative;
+	top: 50%;
+	left: 50px;
+	font-size: 3.5vw;
 }
 
 nav .nav-item:hover a {
