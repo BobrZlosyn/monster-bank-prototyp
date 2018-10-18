@@ -8,6 +8,7 @@
 body {
 	background: rgb(33,33,33);
 	color: orange;
+	min-width: 350px;
 }
 
 header .nav {
@@ -18,13 +19,19 @@ header .nav {
 	color: orange;
 }
 
+.navbar-toggler-icon {
+	color: orange;
+	border-color: orange;
+}
+
 .welcome-img h1 {
-	position: relative;
-	top: 50%;
+	position: absolute;
+	top: 15.5vw;
 	left: 50px;
 	font-size: 3.5vw;
 }
 
+nav .nav-item:hover .fas, 
 nav .nav-item:hover a {
 	color: red;
 }
@@ -44,16 +51,21 @@ nav .nav-item:hover a {
 }
 
 header .nav-item {
-	margin: 5px;
 	padding-top:10px;
 }
 
-header .nav-item {
-	margin: 5px;
-	padding-top:10px;
-}
 header .nav-item a {
 	font-weight: bold;
+}
+
+header .nav-item:hover button{
+	border-color:red;
+	color:red;
+	background:none;
+}
+
+header .nav-item:hover button .fas{
+	color:red;
 }
 
 .empty-gradient {
@@ -64,6 +76,8 @@ header .nav-item a {
 .upcontent {
 	position: absolute;
 	width: 100%;
+	min-width: 350px;
+	background: linear-gradient(black, rgb(33,33,33, 0));
 }
 
 .fas, .fab {
@@ -79,8 +93,21 @@ header .nav-item a {
 .card .fas, 
 .card .fab {
 	font-size:7.5em;
+	
 }
 
+@media all and (max-width: 770px) {
+    .hide-sm {
+		display:none;
+	}
+}
+
+@media all and (max-width: 350px) {
+    .welcome-img h1 {
+		top: 75px;
+		font-size: 16px;
+	}
+}
 
 
 

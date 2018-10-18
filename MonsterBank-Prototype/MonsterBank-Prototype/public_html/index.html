@@ -18,24 +18,36 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
     </head>
     <body>
         
 		
-		<section class="upcontent">
+		<section class="upcontent  navbar-expand-lg">
 			<header >
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6 col-6">
 							LOGO  
 						</div>  
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6 col-6">
 							<ul class="nav">            
-							  <li class="nav-item">
-								<button type="button" class="btn btn-outline-warning"><i class="fas fa-plus"></i><span> Stát se klientem</span></button>
+							  <li class="nav-item">						
+								<button type="button" class="btn btn-outline-warning">
+									<i class="fas fa-plus"></i>
+									<span class="hide-sm"> Stát se klientem</span>
+								</button>
 							  </li>
 							  <li class="nav-item">				  
-								<button type="button" class="btn btn-outline-warning"><i class="fas fa-lock"></i><span> Přihlaste se</span></button>
+								<button type="button" class="btn btn-outline-warning">
+									<i class="fas fa-lock"></i>
+									<span class="hide-sm"> Přihlaste se</span>
+								</button>
+							  </li>
+							  <li class="nav-item">	
+								  <button class="btn btn-outline-warning navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<i class="fas fa-bars"></i>
+								  </button>
 							  </li>
 							</ul>
 						</div>	
@@ -43,9 +55,11 @@
 				</div>
 			</header>
 			
-			<nav class="container">
-				<div class="row">
-					<ul class="nav"> 
+			<nav class="container navbar ">
+				  
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto"> 
 						<li class="nav-item">
 						<a class="nav-link" href="#"><i class="fas fa-home"></i></a>
 					  </li>			
@@ -71,8 +85,8 @@
 		
 		<main>
 			<div class="welcome-img">
-				<h1>"Vymyslet něco doma"</h1>
-				<img class="img-fluid" src="img/Slenderman1.jpg" alt="Los Angeles">				
+				<img class="img-fluid" src="img/Slenderman1.jpg" alt="Los Angeles">	
+				<h1>"Vymyslet něco doma"</h1>				
 			</div>
 			<div class="empty-gradient">
 			</div>
