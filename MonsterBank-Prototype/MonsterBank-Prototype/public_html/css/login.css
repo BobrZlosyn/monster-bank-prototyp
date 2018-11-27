@@ -1,0 +1,20 @@
+.orange-panel {
+	background: orange;
+	color: black;
+	padding: 45px 15px 45px 15px;
+	border-top-right-radius: 25px; 
+	border-bottom-right-radius: 25px; 
+}
+
+.orange-side {
+	border-top: 3px solid orange;
+	border-bottom: 1px solid orange;
+	
+}
+.content {
+	margin-top: 50px;
+}
+
+.box-content{
+	height:300px;
+}
