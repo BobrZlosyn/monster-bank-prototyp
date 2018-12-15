@@ -2,11 +2,11 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="cs"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>MonsterBank</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,25 +18,26 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
         
 		
-		<section class="upcontent  navbar-expand-lg">
+		<div class="upcontent  navbar-expand-lg">
 			<header >
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6 col-sm-6 col-6">
-							LOGO  
+						<div class="col-md-5 col-sm-5 col-5">
+							<a href="" id="logo-img">
+								
+							</a> 
 						</div>  
-						<div class="col-md-6 col-sm-6 col-6">
+						<div class="col-md-7 col-sm-7 col-7">
 							<ul class="nav">            
 							  <li class="nav-item">						
-								<button type="button" class="btn btn-outline-warning">
+								<a href="" class="btn btn-outline-warning">
 									<i class="fas fa-plus"></i>
 									<span class="hide-sm"> Stát se klientem</span>
-								</button>
+								</a>
 							  </li>
 							  <li class="nav-item">				  
 								<a href="login.html" class="btn btn-outline-warning">
@@ -61,7 +62,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto"> 
 						<li class="nav-item">
-						<a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+						<a class="nav-link" href="#" id="active-tab"><i class="fas fa-home"></i></a>
 					  </li>			
 					  <li class="nav-item">
 						<a class="nav-link" href="#">Přišerovský účet</a>
@@ -81,12 +82,32 @@
 					</ul>
 				</div>
 			</nav>
-		</section>
+		</div>
 		
 		<main>
-			<div class="welcome-img">
-				<img class="img-fluid" src="img/Slenderman1.jpg" alt="Los Angeles">	
-				<h1>"Vymyslet něco doma"</h1>				
+		<div id="demo" class="carousel slide  welcome-img" data-ride="carousel">
+
+			  
+			  <!-- Indicators -->
+			  <ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+			  </ul>
+			  
+			  <!-- The slideshow -->
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="img-fluid" src="img/Slenderman1.jpg" alt="slenderman">	
+					<h1>"Díky MonsterBank již nemusím <br />skrývat své lístky v lese."</h1>
+				</div>
+				
+				<div class="carousel-item">
+				  <img class="img-fluid" src="img/zombies2.jpg" alt="zombies">	
+				  <h1>"Díky MonsterBank se mi <br />konečně vyplatí vrátit  <br />zpátky na Zem."</h1>
+				</div>
+			  </div>
+			  
+			 
 			</div>
 			<div class="empty-gradient">
 			</div>
@@ -96,8 +117,8 @@
 					<h2>Proč se to zkusit u nás:</h2>
 				</div>	
 				
-				<div class="row">
-					<div class="col">
+				<div class="row offers">
+					<div class="col-12 col-sm-12 col-md-4">
 						<div class="card">
 						   <div class="card-header"><a class="" href="#"><i class="fab fa-optin-monster"></i></a></div>
 						  <div class="card-body">
@@ -108,7 +129,7 @@
 						  <div class="card-footer"><a href="">Chci vědět více >></a></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-12 col-sm-12 col-md-4">
 						<div class="card">
 						   <div class="card-header"><a class="" href="#"><i class="fas fa-piggy-bank"></i></a></div>
 						  <div class="card-body">
@@ -118,7 +139,7 @@
 						  <div class="card-footer"><a href="">Chci vědět více >></a></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-12 col-sm-12 col-md-4">
 						<div class="card">
 						   <div class="card-header"><a class="" href="#"><i class="fas fa-pastafarianism"></i></a></div>
 						  <div class="card-body">
@@ -131,46 +152,66 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col">
+				<div class="row offers">
+					<div class="col-12 col-sm-12 col-md-4">
 						<div class="card">
 						   <div class="card-header"><a class="" href="#"><i class="fas fa-chart-area"></i></a></div>
-						  <div class="card-body">Přátelské prostředí</div> 
+						  <div class="card-body">
+							<h5>Nejlepší kurzy</h5>
+							<p>Pokud jinde najdete lepší kurzy než u nás, podělte se s námi a my je vzápětí upravíme!!! </p>
+							</div> 
 						  <div class="card-footer"><a href="">Chci vědět více >></a></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-12 col-sm-12 col-md-4">
 						<div class="card">
 						   <div class="card-header"><a class="" href="#"><i class="fab fa-earlybirds"></i></a></div>
 						  <div class="card-body">
 							<h5>Věrnostní program</h5>
-							<p></p>
+							<p>Pro své věrné přisluhovače, máme výhodné úrokování, dárky a mnoho dalšího.</p>
 						  </div> 
 						  <div class="card-footer"><a href="">Chci vědět více >></a></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-12 col-sm-12 col-md-4">
 						<div class="card">
 						   <div class="card-header"><a class="" href="#"><i class="fab fa-d-and-d"></i></a></div>
-						  <div class="card-body">Žádné přesudky</div> 
+						  <div class="card-body">
+							<h5>Bezpečí</h5>
+							<p>O bezpečí vašich peněz se stará bezpočet draků a temných stvoření napříč všemi dimenzemi.</p>
+							</div> 
 						  <div class="card-footer"><a href="">Chci vědět více >></a></div>
 						</div>
 					</div>
 				</div>
-				
-				<div class="row">
-					<h2>Ohlasy z okolí:</h2>
-				</div>	
-				
-				<div class="row">
-					<h2>Naše směnnové kurzy:</h2>
-				</div>	
+					
 				
 			</div>
 		</main>
-        <footer>
+        <footer class="footer-down">
             <div class="container">
-                FOOTER INFO
+                <div class="row">
+					<div class="col-md-8">
+						<h3>MonsterBank se představuje!</h3>
+						<p >Tohle je fakt skvělé představení! Jsme relativně nová banka, která se rychle rozšířila mezi pět dimenzí a rychle získáváme postavení
+						i mezi ostatními. Pokud si toto čte běžný smrtelník, má možná trochu strach, ale bát se nemusí - jsme tu i pro smrtelníky! K tomu všemu ještě 
+						smrtelníkům, kteří se stanou našimi klienty slibujeme ochranu napříč dimenzemi a to už se vyplatí!</p>
+						<p class="right"><i class="fas fa-cloud-moon"></i></p>
+					</div>
+					<div class="col-md-4">
+						<h3>Přehlédli jste něco?</h3>
+						<ul >
+							  <li class=""><a href="">Přihlášení</a></li>
+							  <li class=""><a href="">Registrace</a></li>
+							  <li class=""><a href="">Přehled</a></li>
+							  <li class=""><a href="">Příšerovský účet</a></li>
+							  <li class=""><a href="">Lidský účet</a></li>
+							  <li class=""><a href="">Pobočky a bankomaty</a></li>
+							  <li class=""><a href="">O nás</a></li>
+							  <li class=""><a href="">Pracovní pozice</a></li>
+						</ul>
+					</div>
+				</div>
             </div>            
         </footer>
     </body>
