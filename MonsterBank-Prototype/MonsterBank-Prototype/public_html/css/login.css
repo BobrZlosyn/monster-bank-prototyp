@@ -25,7 +25,8 @@
 	background: none;
 }
 
-.orange-side .fas{
+.orange-side .fas,
+.orange-side .fab {
 	font-size: 7.5em;
 }
 
@@ -58,12 +59,16 @@
 	background:  rgb(191, 24, 0);
 }
 
-@media all and (max-width: 770px) {
+@media all and (max-width: 767px) {
     
 	.orange-panel {
-		float:left;
-		border-top-right-radius: 0px; 
-		border-bottom-left-radius: 10px; 
+		border-bottom-right-radius: 0px; 
+		border-top-left-radius: 10px; 
 	}
+	
+	.alignment {
+		flex-direction: column-reverse;
+	}
+	
 	
 }
