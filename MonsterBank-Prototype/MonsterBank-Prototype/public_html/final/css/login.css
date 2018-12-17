@@ -1,0 +1,74 @@
+.orange-panel {
+	background: orange;
+	color: black;
+	padding: 45px 15px 45px 15px;
+	border-top-right-radius: 10px; 
+	border-bottom-right-radius: 10px; 
+	font-weight: bold;
+}
+
+.orange-side {
+	border-top: 3px solid orange;
+	border-bottom: 1px solid orange;
+	
+}
+.content {
+	margin-top: 50px;
+}
+
+.box-content{
+	height:470px;
+	padding: 25px;
+}
+
+.welcome-img {
+	background: none;
+}
+
+.orange-side .fas,
+.orange-side .fab {
+	font-size: 7.5em;
+}
+
+.orange-side .fas:hover{
+	color:red;
+}
+
+#login-err,
+#pwd-err {
+	color:red;
+	display:block;
+}
+
+.wrong-input {
+	border: 1px solid red;
+}
+
+#submit {
+	float:right;
+	width: 50%;
+	background: red;
+	border: 1px solid red;
+}
+
+#submit:focus {
+	box-shadow: 0px 0px 15px  rgb(121, 24, 0);;
+}
+
+#submit:hover {
+	background:  rgb(191, 24, 0);
+}
+
+@media all and (max-width: 767px) {
+    
+	.orange-panel {
+		border-bottom-right-radius: 0px; 
+		border-top-left-radius: 10px; 
+	}
+	
+	.alignment {
+		flex-direction: column-reverse;
+	}
+	
+	
+}

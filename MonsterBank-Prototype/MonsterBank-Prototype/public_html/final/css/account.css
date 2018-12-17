@@ -1,0 +1,124 @@
+#history {
+	margin: 20px 0px 20px 0px;
+}
+
+.history-line {
+	border-radius: 10px;
+	margin: 5px;
+	padding: 15px 5px 15px 5px;
+	border: 1px solid rgba(255,255,255, 0.2);
+}
+
+
+.history-line:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.03);
+}
+
+.history-line .date-info,
+.history-line .how-info {
+	font-size: 13px;
+}
+
+.history-line .who-info div {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0px;
+}
+
+.history-line .mess-info {
+	font-size: 13px;
+	font-style: italic;
+}
+
+.history-line  .logo-info {
+	text-align: center;
+	position: relative;
+	margin-top: 15px;
+}
+
+.more-history{
+	width: 100%;
+	color: orange;
+	border: 1px solid orange;
+	font-weight: bold;
+}
+
+.more-history:hover {
+	background: orange;
+}
+
+
+
+.history-line .price-info {
+	color: rgb(65, 167, 54);
+}
+
+.history-line  .negative {
+	color: rgb(251, 24, 0);
+}
+
+.account {
+	border-radius: 10px;
+	margin: 15px 0px 15px 0px;
+	padding: 10px;
+	border: 1px solid rgba(255,255,255, 0.2);
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.account div{
+	border-left: 1px solid rgba(255,255,255, 0.2);
+}
+
+.account div:first-child{
+	border-left: 0px solid black;
+}
+
+
+.fa-dollar-sign {
+	font-size:3.5em;
+	
+}
+
+footer .container{
+	font-size: 11px;
+	border-top: 1px solid orange;
+	margin-top: 15px;
+}
+
+footer .container .copyright{
+	text-align: right;
+}
+
+footer .container .last-signin{
+	text-align: center;
+}
+
+
+@media all and (max-width: 770px) {
+    .account div{
+		border-top: 1px solid rgba(255,255,255, 0.2);
+		border-left: none;
+		padding: 5px;
+	}
+
+	.account div:first-child{
+		border-top: 0px solid black;
+	}
+	
+	.account .row {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.account {
+		padding: 0px;
+	}
+	
+	 .hide-sm {
+		display:none;
+	}
+}
+

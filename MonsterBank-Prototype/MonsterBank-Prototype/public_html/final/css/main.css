@@ -1,0 +1,261 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+	background: rgb(22,22,22);
+	color: orange;
+	min-width: 350px;
+}
+
+
+header .nav {
+	float: right;
+}
+
+a#logo-img {
+	background-image: url('../img/logo3.png');
+	display: inline-block;
+    width: 179px;
+	height: 66px;
+}
+
+a:focus {	
+	outline: none;
+}
+
+#logo-img:hover, #logo-img:focus {
+	background-image: url('../img/logo2.png');
+}
+
+nav {	
+	border-bottom: 1px solid orange;
+}
+
+.nav-item a {
+	color: orange;
+	font-weight: bold;
+}
+
+.navbar-toggler-icon {
+	color: orange;
+	border-color: orange;
+}
+
+.welcome-img h1 {
+	position: absolute;
+	top: 22.5vw;
+	left: 50px;
+	font-size: 3.5vw;
+}
+
+
+
+.welcome-img {
+	position:relative;
+	left: 0px;
+	top: 0px;
+	background: black;
+	text-align:center;
+	width: 100%;
+}
+
+
+
+.welcome-img img {
+	width: 100%;
+}
+
+header .nav-item {
+	padding-top:10px;
+}
+
+header .nav-item a {
+	font-weight: bold;
+}
+
+header .nav-item button{
+	border: 1px solid orange;
+}
+
+header .nav-item button,
+header .btn-outline-warning {
+	border: 1px solid orange;
+}
+header .btn-outline-warning {
+	margin-right: 5px;
+}
+
+header .nav-item button:focus {
+	box-shadow: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:hover .fas,
+.nav-link:focus .fas,
+header .btn-outline-warning:hover,
+header .btn-outline-warning:focus,
+header .btn-outline-warning:hover .fas,
+header .btn-outline-warning:focus .fas {
+	color: red;
+}
+
+header .btn-outline-warning:hover,
+header .btn-outline-warning:focus{
+	border-color:orange;
+	background:orange;
+	outline: none;
+	box-shadow:none;
+}
+
+.empty-gradient {
+	height: 100px;
+	background: linear-gradient(black, rgb(22,22,22));
+}
+
+.upcontent {
+	position: absolute;
+	width: 100%;
+	min-width: 350px;
+	z-index:1000;
+	background: rgba(0,0,0,0.6);
+}
+
+.fas, .fab {
+	color: orange;
+}
+
+.card {
+	background: rgba(255,255,255,0.08);
+	text-align: center;
+	height: 100%;
+}
+
+.card:hover{	
+	background: rgba(255,255,255,0.1);
+}
+
+.offers div {
+	margin-top: 25px;
+}
+
+.footer-down a,
+.card-footer a {
+	color: orange;
+	
+}
+
+.footer-down a:hover,
+.card-footer a:hover,
+.footer-down a:focus,
+.card-footer a:focus {
+	color: red;
+	
+}
+
+.fa-bars {
+	padding: 4px 0px 4px 0px;
+}
+
+.card .fas, 
+.card .fab {
+	font-size:7.5em;
+	
+}
+.card .fas:hover,
+.fa-cloud-moon:hover, 
+.card .fab:hover {
+	color:red;
+}
+
+#active-tab {
+	background: orange;
+	color: black;
+	font-weight: bold;
+}
+#active-tab i{
+	color: black;
+}
+
+#active-tab:hover,
+#active-tab:hover i,
+#active-tab:focus,
+#active-tab:focus i {
+	color: red;
+}
+
+nav.container.navbar {
+	padding-bottom: 0px;
+}
+
+.footer-down .container{
+	background: rgba(33,33, 33, 1);
+	margin-top: 45px;
+	padding: 25px;
+	border-radius: 5px;
+	
+}
+
+footer h3 {
+	text-align:center;
+}
+
+
+.right {
+	text-align:center;
+}
+
+.fa-cloud-moon {	
+	font-size: 4.5em;
+}
+
+.carousel-indicators .active {
+	background: orange;
+}
+
+.carousel-indicators li:hover {
+	background: rgba(255, 255, 255, 0.65);
+}
+
+.carousel-indicators li:hover.active {
+	background: orange;
+}
+
+@media all and (max-width: 770px) {
+    .hide-sm {
+		display:none;
+	}
+	.navbar-nav {		
+		background: rgba(22,22,22,0.9);
+	}
+	.navbar-nav .nav-link {
+		padding-left: 25px; 		
+	}
+}
+
+@media all and (max-width: 350px) {
+    .welcome-img h1 {
+		top: 75px;
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
